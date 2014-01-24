@@ -4,9 +4,8 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Formation Fasterize</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -15,7 +14,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+		<!-- <link rel="stylesheet" href="css/theme/presentation.css"> -->
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -28,325 +28,192 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<style type="text/css">
+			#reveal .icon-bar {
+			    margin-left: 0.5em;
+			    margin-top: 0.3em;
+			}
+
+			#reveal .icon-bar {
+			    font-size: 0.4em;
+			}
+
+			#reveal .icon-bar img {
+			    vertical-align: middle;
+			}
+
+			#reveal .icon-bar a {
+			    text-decoration: none;
+			    color: rgba(74, 80, 86, 0.5);
+			    font-weight: 300;
+			}
+
+			#reveal .icon-bar a:hover {
+			    color: #4a5056;
+			    text-shadow: 0px -1px 2px rgba(255, 255, 255, 0.5);
+			    text-decoration: underline;
+			}
+
+			#reveal .icon-bar a span {
+			    padding-left: 0.25em;
+			    padding-right: 1em;
+			}
+
+			#reveal img:not(.plain) {
+			  margin: 30px 0 0 0;
+			  background: rgba(255,255,255,0.12);
+			  border: 4px solid #eee;
+
+			  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+			     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+			          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+			  -webkit-transition: all .11s linear;
+			     -moz-transition: all .11s linear;
+			       -o-transition: all .11s linear;
+			          transition: all .11s linear;
+			}
+
+			#reveal img.plain, #reveal img.plain:hover {
+			    border: none;
+			    box-shadow: none;
+			    background: none;
+			}
+
+			#reveal a.image:hover img:not(.plain), #reveal a.image:hover img.plain {
+			  background: none;
+			  box-shadow: none;
+			  -webkit-box-shadow: none;
+			}
+
+			#reveal pre code {
+				word-wrap:inherit;
+			}
+		</style>
 	</head>
 
 	<body>
 
-		<div class="reveal">
+		<div class="reveal" id="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+				<section data-state="begin" class="present" style="display: block;background:url('assets/man/superman.png') no-repeat;height:400px;padding-left: 100px; padding-top: 100px;marigin-top: 40px;">
+					<h1>Formation <br/>partenaire</h1>
 				</section>
-
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h1>Présentation Générale</h1>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+						<h3>Fonctionnement général de Fasterize</h3>
+						<img src="assets/FasterizeplusCDN.png" class="plain"/>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
+						<h3>Fonctionnement général de Fasterize</h3>
+						<img src="assets/architecture.png" />
 					</section>
 					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<h3>Fonctionnement général de Fasterize</h3>
+						<img src="assets/architecture2.png" />
+					</section>
+					<section style="background:url('assets/man/32.png') no-repeat; min-height:300px; padding-left:50px;">
+						<h3>Nom de domaine DNS</h3>
+						<ul>
+							<li><strong>.fasterized.com</strong> : pointe sur la plateforme</li>
+							<li><strong>.fasterize.it</strong>  : pointe sur les serveurs d'origine</li>
+							<li><strong>.s0/1.frz.io</strong> : pointe sur la plateforme ou un CDN</li>
 					</section>
 				</section>
-
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+					<section>
+						<h1>les types de règles</h1>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+					<section style="background:url('assets/man/47.png') no-repeat; min-height:300px">
+						<h3>Moins de requêtes</h3>
+						<ul>
+							<li><a href="http://browserdiet.com/fr/#combine-css" target="_blank">Concaténation des fichiers css</a></li>
+							<li><a href="http://browserdiet.com/fr/#combine-js" target="_blank">Concaténation des fichiers js</a></li>
+							<li><a href="http://browserdiet.com/fr/#cache" target="_blank">Optimisation de la mise en cache</a></li>
+						</ul>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					<section style="background:url('assets/man/36.png') no-repeat; min-height:300px; padding-left:100px;">
+						<h3>Des requêtes et réponses moins lourdes</h3>
+						<ul>
+							<li><a href="http://browserdiet.com/fr/#minify-css" target="_blank">Minification des fichiers css</a></li>
+							<li><a href="http://browserdiet.com/fr/#minify-js" target="_blank">Minification des fichiers js</a></li>
+							<li><a href="http://browserdiet.com/fr/#compress" target="_blank">Minification des fichiers html</a></li>
+							<li><a href="http://browserdiet.com/fr/#optimize" target="_blank">Optimisation les images</a></li>
+							<li><a href="http://browserdiet.com/fr/#gzip" target="_blank">Encodage des réponses HTTP en gzip </a></li>
+							<li><a href="http://www.globaldots.com/googles-web-performance-best-practices-3-minimize-request-overhead/" target="_blank">Servir les ressources sur des domaines sans cookie</a></li>
+						</ul>
+					</section>
+					<section style="background:url('assets/man/46.png') no-repeat; min-height:300px; padding-left:100px;">
+						<h3>Des objets chargés différemment</h3>
+						<ul>
+							<li><a href="http://browserdiet.com/fr/#css-on-top-js-on-bottom" target="_blank">Déplacement les css en haut de page</a></li>
+							<li><a href="http://browserdiet.com/fr/#3rd-party-async" target="_blank">Chargement différé des fichiers JavaScript</a></li>
+							<li><a href="http://browserdiet.com/fr/#data-uri" target="_blank">Inclusion des petites images dans les pages</a></li>
+							<li><a href="http://vvo.github.io/lazyload/" target="_blank">Chargement différé des images non visibles</a></li>
+							<li><a href="http://www.prelude.me/index.php/2011/05/11/web-performance-cache-domain-sharding-et-cdn/" target="_blank">Parallélisation sur plusieurs domaines</a></li>
+						</ul>
 					</section>
 				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+					<section>
+						<h1>Tour de l’interface de configuration</h1>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
+						<h3>page de bienvenue <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/1398/welcome">∞</a></h3>
+						<ul>
+							<li>Test du site avec le domaine de démo</li>
+							<li>Instruction de branchement</li>
+							<li>Résultat des tests</li>
+						</ul>
+						<img src="assets/welcome.png" />
+					</section>
+					<section>
+						<h3>Dashboard <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/2/dashboard">∞</a></h3>
+						<ul>
+							<li>Arrêter le service en case de problème</li>
+							<li>Suivie de la consommation</li>
+							<li>Vider le cache de Fasterize</li>
+						</ul>
+						<img src="assets/dashboard.png" />
+					</section>
+					<section>
+						<h3>page de règle d'optimisation <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/2/rules">∞</a></h3>
+						<ul>
+							<li>Activation des règles</li>
+							<li>Option des règles en cliquant sur la clé à droite</li>
+							<li>Exclusion d'url pour une règle</li>
+						</ul>
+						<img src="assets/rules.png" />
+					</section>
+					<section>
+						<h3>page de gestion des domaines <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/2/hosts_mapping">∞</a></h3>
+						<ul>
+							<li>Configuration de l'origine</li>
+							<li>Ajout de domaine secondaire</li>
+						</ul>
+						<img src="assets/domains.png" />
+					</section>
+					<section>
+						<h3>page de gestion des exceptions <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/2/exclusions">∞</a></h3>
+						<p>Permet de ne pas optimiser une url en particulier</p>
+						<img src="assets/exclusion.png" />
+					</section>
+					<section>
+						<h3>page de gestion du cache <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/2/caching">∞</a></h3>
+						<p>Redéfinition des règles de mise en cache pour une url</p>
+						<img src="assets/caching.png" />
 					</section>
 				</section>
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
-
+			</div>
+			<div class="icon-bar">
+				<p>
+					<img src="assets/logo_s.png" class="plain"/>
+					<a class="image" href="https://twitter.com/fasterize"><img class="plain" src="assets/tweet-me.svg" height="35"><span>twitter</span></a><a class="image" href="mailto:info@fasterize.com"><img class="plain" src="assets/email-me.svg" height="35"><span>email</span></a><a class="image" href="http://blog.fasterize.com/"><img class="plain" src="assets/blog-me.svg" height="35"><span>blog</span></a></p>
 			</div>
 
 		</div>
