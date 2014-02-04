@@ -89,6 +89,14 @@
 			#reveal pre code {
 				word-wrap:inherit;
 			}
+      ul#domainName>li {
+        font-weight: bold;
+        margin-bottom:20px;
+      }
+      #domainName ul {
+        font-weight:normal;
+        list-style-type: circle;
+      }
 		</style>
 	</head>
 
@@ -98,7 +106,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-state="begin" class="present" style="display: block;background:url('assets/man/superman.png') no-repeat;height:400px;padding-left: 100px; padding-top: 100px;marigin-top: 40px;">
+				<section data-state="begin" class="present" >
 					<h1>Formation <br/>partenaire</h1>
 				</section>
 				<section>
@@ -106,24 +114,45 @@
 						<h1>Présentation Générale</h1>
 					</section>
 					<section>
-						<h3>Fonctionnement général de Fasterize</h3>
+						<h3>Fonctionnement général</h3>
 						<img src="assets/FasterizeplusCDN.png" class="plain"/>
 					</section>
 					<section>
-						<h3>Fonctionnement général de Fasterize</h3>
+						<h3>Architecture générale</h3>
 						<img src="assets/architecture.png" />
 					</section>
 					<section>
-						<h3>Fonctionnement général de Fasterize</h3>
+						<h3>Fonctionnement du moteur</h3>
 						<img src="assets/architecture2.png" />
 					</section>
-					<section style="background:url('assets/man/32.png') no-repeat; min-height:300px; padding-left:50px;">
-						<h3>Nom de domaine DNS</h3>
-						<ul>
-							<li><strong>.fasterized.com</strong> : pointe sur la plateforme</li>
-							<li><strong>.fasterize.it</strong>  : pointe sur les serveurs d'origine</li>
-							<li><strong>.s0/1.frz.io</strong> : pointe sur la plateforme ou un CDN</li>
-					</section>
+					<section>
+            <h3>Noms de domaine</h3>
+            <p class="fragment" data-fragment-index="5">(automatiquement créés)</p>
+						<ul id="domainName">
+              <li class="fragment" class="fragment" data-fragment-index="1">fasterized.com
+                <ul>
+                  <li>par défaut pointe sur la plateforme (mode démo)</li>
+                  <li>si une config existe, pointe sur la plateforme ou sur l'origine</li>
+                </ul>
+              </li>
+              <li class="fragment" data-fragment-index="2">fasterized.net
+                <ul>
+                  <li>pointe toujours sur la plateforme</li>
+                </ul>
+              </li>
+							<li class="fragment" data-fragment-index="3">fasterize.it
+                <ul>
+                  <li>pointe sur les serveurs d'origine</li>
+                </ul>
+              </li>
+							<li class="fragment" data-fragment-index="4">s0.frz.io / s1.frz.io
+                <ul>
+                  <li>domaines "shardés", utilisés pour les objets statiques</li>
+                  <li>pointent sur la plateforme ou un CDN</li>
+                </ul>
+              </li>
+            </ul>  
+				</section>
 				</section>
 				<section>
 					<section>
