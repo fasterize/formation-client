@@ -93,7 +93,7 @@
         font-weight: bold;
         margin-bottom:20px;
       }
-      #domainName ul {
+      #domainName ul, .rule ul {
         font-weight:normal;
         list-style-type: circle;
       }
@@ -156,53 +156,54 @@
 				</section>
 				<section>
 					<section>
-						<h1>les types de règles</h1>
+						<h1>les règles d'optimisation</h1>
 					</section>
-					<section style="background:url('assets/man/47.png') no-repeat; min-height:300px">
+					<section data-transition="linear">
 						<h3>Moins de requêtes</h3>
 						<ul>
-							<li><a href="http://browserdiet.com/fr/#combine-css" target="_blank">Concaténation des fichiers css</a></li>
-							<li><a href="http://browserdiet.com/fr/#combine-js" target="_blank">Concaténation des fichiers js</a></li>
-							<li><a href="http://browserdiet.com/fr/#cache" target="_blank">Optimisation de la mise en cache</a></li>
+							<li><a href="http://browserdiet.com/fr/#combine-css" target="_blank">Concaténation des fichiers CSS</a></li>
+							<li><a href="http://browserdiet.com/fr/#combine-js" target="_blank">Concaténation des fichiers JS</a></li>
+							<li><a href="http://browserdiet.com/fr/#data-uri" target="_blank">Inlining des petites images</a></li>
+							<li><a href="http://vvo.github.io/lazyload/" target="_blank">Lazyloading des images</a></li>
+							<li><a href="http://browserdiet.com/fr/#cache" target="_blank">Mise en cache</a></li>
 						</ul>
 					</section>
-					<section style="background:url('assets/man/36.png') no-repeat; min-height:300px; padding-left:100px;">
+					<section data-transition="linear">
 						<h3>Des requêtes et réponses moins lourdes</h3>
-						<ul>
-							<li><a href="http://browserdiet.com/fr/#minify-css" target="_blank">Minification des fichiers css</a></li>
-							<li><a href="http://browserdiet.com/fr/#minify-js" target="_blank">Minification des fichiers js</a></li>
-							<li><a href="http://browserdiet.com/fr/#compress" target="_blank">Minification des fichiers html</a></li>
-							<li><a href="http://browserdiet.com/fr/#optimize" target="_blank">Optimisation les images</a></li>
-							<li><a href="http://browserdiet.com/fr/#gzip" target="_blank">Encodage des réponses HTTP en gzip </a></li>
+						<ul class="rule">
+							<li><a href="http://browserdiet.com/fr/#minify-css" target="_blank">Minification des fichiers CSS</a></li>
+							<li><a href="http://browserdiet.com/fr/#minify-js" target="_blank">Minification des fichiers JS</a></li>
+							<li><a href="http://browserdiet.com/fr/#compress" target="_blank">Minification des fichiers HTML</a></li>
+              <li><a href="http://browserdiet.com/fr/#optimize" target="_blank">Optimisation des images</a></li>
+							<li><a href="http://browserdiet.com/fr/#gzip" target="_blank">Compression GZIP</a></li>
 							<li><a href="http://www.globaldots.com/googles-web-performance-best-practices-3-minimize-request-overhead/" target="_blank">Servir les ressources sur des domaines sans cookie</a></li>
 						</ul>
 					</section>
-					<section style="background:url('assets/man/46.png') no-repeat; min-height:300px; padding-left:100px;">
+					<section data-transition="linear">
 						<h3>Des objets chargés différemment</h3>
 						<ul>
-							<li><a href="http://browserdiet.com/fr/#css-on-top-js-on-bottom" target="_blank">Déplacement les css en haut de page</a></li>
+							<li><a href="http://browserdiet.com/fr/#css-on-top-js-on-bottom" target="_blank">Déplacement des CSS en haut de page</a></li>
 							<li><a href="http://browserdiet.com/fr/#3rd-party-async" target="_blank">Chargement différé des fichiers JavaScript</a></li>
-							<li><a href="http://browserdiet.com/fr/#data-uri" target="_blank">Inclusion des petites images dans les pages</a></li>
-							<li><a href="http://vvo.github.io/lazyload/" target="_blank">Chargement différé des images non visibles</a></li>
-							<li><a href="http://www.prelude.me/index.php/2011/05/11/web-performance-cache-domain-sharding-et-cdn/" target="_blank">Parallélisation sur plusieurs domaines</a></li>
+							<li><a href="http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg" target="_blank">Progressive JPEG</li>
+							<li><a href="http://www.prelude.me/index.php/2011/05/11/web-performance-cache-domain-sharding-et-cdn/" target="_blank">Parallélisation sur plusieurs domaines (sharding)</a></li>
 						</ul>
 					</section>
 				</section>
 				<section>
 					<section>
-						<h1>Tour de l’interface de configuration</h1>
+						<h1>Tour de l’interface</h1>
 					</section>
-					<section>
-						<h3>page de bienvenue <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/1398/welcome">∞</a></h3>
+					<section data-transition="linear">
+						<h3>Page de bienvenue <a title="Link" class="dashboard" target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/welcome">∞</a></h3>
 						<ul>
-							<li>Test du site avec le domaine de démo</li>
-							<li>Instruction de branchement</li>
-							<li>Résultat des tests</li>
+							<li>Test du site avec le mode preview</li>
+							<li>Instructions de branchement</li>
+							<li>Résultat des tests (+liens)</li>
 						</ul>
 						<img src="assets/welcome.png" />
 					</section>
-					<section>
-						<h3>Dashboard <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/2/dashboard">∞</a></h3>
+					<section data-transition="linear">
+						<h3>Dashboard <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/dashboard">∞</a></h3>
 						<ul>
 							<li>Arrêter le service en case de problème</li>
 							<li>Suivie de la consommation</li>
@@ -210,8 +211,8 @@
 						</ul>
 						<img src="assets/dashboard.png" />
 					</section>
-					<section>
-						<h3>page de règle d'optimisation <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/2/rules">∞</a></h3>
+					<section data-transition="linear">
+						<h3>page de règle d'optimisation <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/rules">∞</a></h3>
 						<ul>
 							<li>Activation des règles</li>
 							<li>Option des règles en cliquant sur la clé à droite</li>
@@ -219,25 +220,30 @@
 						</ul>
 						<img src="assets/rules.png" />
 					</section>
-					<section>
-						<h3>page de gestion des domaines <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/2/hosts_mapping">∞</a></h3>
+					<section data-transition="linear">
+						<h3>page de gestion des domaines <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/hosts_mapping">∞</a></h3>
 						<ul>
 							<li>Configuration de l'origine</li>
 							<li>Ajout de domaine secondaire</li>
 						</ul>
 						<img src="assets/domains.png" />
 					</section>
-					<section>
-						<h3>page de gestion des exceptions <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/2/exclusions">∞</a></h3>
+					<section data-transition="linear">
+						<h3>page de gestion des exceptions <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/exclusions">∞</a></h3>
 						<p>Permet de ne pas optimiser une url en particulier</p>
 						<img src="assets/exclusion.png" />
 					</section>
 					<section>
-						<h3>page de gestion du cache <a title="Link"  target="_blank" href="http://www.fasterize.com/fr/website_configs/2/caching">∞</a></h3>
+						<h3>page de gestion du cache <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/caching">∞</a></h3>
 						<p>Redéfinition des règles de mise en cache pour une url</p>
 						<img src="assets/caching.png" />
 					</section>
 				</section>
+        <section>
+          <section>
+            <h1>Setup</h1>
+          </section>
+        </section>
 			</div>
 			<div class="icon-bar">
 				<p>
@@ -278,6 +284,13 @@
 				]
 			});
 
+      Reveal.configure({ slideNumber: true });
+      //change id for current partner in every links
+      var links = Array.prototype.slice.call(document.getElementsByClassName('dashboard')),
+          id = Reveal.getQueryHash().id;
+      links.forEach(function(link){
+        link.href = link.attributes['data-href'].value.replace('id',id);
+      });
 		</script>
 
 	</body>
