@@ -291,9 +291,8 @@
           </section>
 					<section data-transition="linear">
 						<h3>Ajouter une configuration</h3>
-						<ul>
-							<li></li>
-						</ul>
+            <a title="Link" target="_blank" class="dashboard" data-href="http://www.fasterize.com/en/users/id/website_configs/new"><img src="assets/Addasite1.png"></a>
+            <img src="assets/Addasite2.png">
 					</section>
  					<section data-transition="linear">
 						<h3>Tester le site</h3>
@@ -315,27 +314,22 @@
 						</ul>
 					</section>
 					<section data-transition="linear">
-            <h3>Activer / Désactiver des règles</h3>
-            <p>Les règles qui posent problème sont en général</p>
-						<ol class="code">
-              <li>DeferJS</li>
-              <li>Concaténation</li>
-              <li>Minification</li>
-              <li>Lazyloading</li>
-						</ol>
-            <p><p><p>Les règles peuvent désactivées pour des pages données ou globalement</p>
-					</section>
-					<section data-transition="linear">
-						<h3>Exclure une ou plusieurs URL qui pose problème au niveau global</h3>
-						<ul>
-							<li></li>
-						</ul>
-					</section>
-					<section data-transition="linear">
-						<h3>Ajouter un nom de domaine secondaire</h3>
-						<ul>
-							<li></li>
-						</ul>
+            <h3>Tuning</h3>
+            <ul>
+              <li>Activer / Désactiver des règles
+                <p>Les règles qui posent problème sont en général</p>
+                <ol style="margin-left:80px">
+                  <li>DeferJS</li>
+                  <li>Concaténation</li>
+                  <li>Minification</li>
+                  <li>Lazyloading</li>
+                </ol>
+                <p><p><p>Les règles peuvent désactivées pour des pages données ou globalement</p>
+                  
+              </li>
+              <li>Exclure une ou plusieurs URL qui pose problème au niveau global</li>
+              <li>Ajouter un nom de domaine secondaire</li>
+            </ul>
 					</section>
 					<section data-transition="linear">
 						<h3>Si le site possède une partie sécurisée (HTTPS)</h3>
@@ -361,12 +355,12 @@
             <p>Cela peut venir de plusieurs facteurs</p>
 						<ul>
 							<li>Il y a une redirection vers le domaine d'origine du client (2 fois le même test)</li>
-							<li>Les images ne sont pas cachées / optimisées (cf. )</li>
+              <li>Les images ne sont pas cachées / optimisées (cf. <a href="#/nonOptimizedImages">Images non optimisées</a>)</li>
 							<li>La fin de la vidéo est mal calculée</li>
 							<li>Le site est déjà optimisé ou très léger</li>
 						</ul>
 					</section>
- 					<section data-transition="linear">
+ 					<section data-transition="linear" id="nonOptimizedImages">
 						<h3>Images non optimisées</h3>
 						<ul>
               <li>Pas de cache <i class="fa fa-arrow-right"></i> forcer le cache s'il n'est pas mis par défaut</li>
@@ -381,21 +375,26 @@
 						</ul>
 					</section>
  					<section data-transition="linear">
-						<h3>Les images sont trop dégradées</h3>
-						<ul>
-							<li></li>
+            <h3>Les images sont trop dégradées</h3>
+            <p>Certaines images, notamment certains dégradés, peuvent subir une modification trop visible</p>
+            <ul>
+              <li>Exclure les images concernées en les mettant en blacklist de la compression d'image</li>
+              <li>Exclure les images concernées de façon globale</li>
+              <li>Désactiver PNG24 <i class="fa fa-arrow-right"></i> PNG8</li>
+              <li>Désactiver la compression des images</li>
 						</ul>
 					</section>
 					<section data-transition="linear">
 						<h3>Le slideshow met trop de temps à apparaître</h3>
 						<ul>
-							<li></li>
+							<li>Désactiver le lazyloading sur la page (blacklist)</li>
+							<li>Désactiver le deferjs sur la page (blacklist)</li>
 						</ul>
 					</section>
 					<section data-transition="linear">
-						<h3>mettre en cache des pages identiques pour tous les utilisateurs</h3>
-						<ul>
-							<li></li>
+						<h3>Mettre en cache des pages identiques pour tous les utilisateurs</h3>
+						<ul class="code">
+              <li>Si le site est "statique", il est possible de mettre en cache les pages en ajoutant <code>.*</code> dans les règles de caching</li>
 						</ul>
 					</section>
 				</section>
