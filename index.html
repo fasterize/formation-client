@@ -6,7 +6,7 @@
 
 		<title>Formation Fasterize</title>
 
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Fasterize">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,10 +15,10 @@
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
-		<!-- <link rel="stylesheet" href="css/theme/presentation.css"> -->
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
@@ -53,7 +53,6 @@
 			    text-shadow: 0px -1px 2px rgba(255, 255, 255, 0.5);
 			    text-decoration: underline;
 			}
-
 			#reveal .icon-bar a span {
 			    padding-left: 0.25em;
 			    padding-right: 1em;
@@ -91,12 +90,27 @@
 			}
       ul#domainName>li {
         font-weight: bold;
-        margin-bottom:20px;
+        margin-bottom:0px;
+        padding:0!important;
       }
-      #domainName ul, .rule ul {
+      #domainName ul, .rule ul, ul>ul {
         font-weight:normal;
         list-style-type: circle;
       }
+      .reveal i{
+        font-family: 'FontAwesome'!important;
+        font-style: normal!important;
+      }
+      .reveal  code {
+          margin: 0 2px;
+          padding: 0px 5px;
+          border: 1px solid #ddd;
+          background-color: #f8f8f8;
+          border-radius: 3px;
+        }
+        #reveal ul li {
+          padding: 10px 0 10px 0;
+        }
 		</style>
 	</head>
 
@@ -129,7 +143,7 @@
             <h3>Noms de domaine</h3>
             <p class="fragment" data-fragment-index="5">(automatiquement créés)</p>
 						<ul id="domainName">
-              <li class="fragment" class="fragment" data-fragment-index="1">fasterized.com
+              <li class="fragment" data-fragment-index="1">fasterized.com
                 <ul>
                   <li>par défaut pointe sur la plateforme (mode démo)</li>
                   <li>si une config existe, pointe sur la plateforme ou sur l'origine</li>
@@ -193,57 +207,198 @@
 					<section>
 						<h1>Tour de l’interface</h1>
 					</section>
-					<section data-transition="linear">
-						<h3>Page de bienvenue <a title="Link" class="dashboard" target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/welcome">∞</a></h3>
-						<ul>
-							<li>Test du site avec le mode preview</li>
-							<li>Instructions de branchement</li>
-							<li>Résultat des tests (+liens)</li>
-						</ul>
-						<img src="assets/welcome.png" />
+					<section data-transition="none">
+          <h3>Page de bienvenue<a title="Link" class="dashboard" target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/welcome"> <i class="fa fa-external-link"></i></a></h3>
+              <ul >
+                <li>Test du site avec le mode preview</li>
+                <li>Instructions de branchement</li>
+                <li>Résultat des tests (+liens)</li>
+                <li>Visible tant que le site n'est pas branché</li>
+              </ul>
+					</section>
+					<section data-transition="none">
+          <h3>Page de bienvenue<a title="Link" class="dashboard" target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/welcome"> <i class="fa fa-external-link"></i></a></h3>
+            <img src="assets/welcome2.png" >
 					</section>
 					<section data-transition="linear">
-						<h3>Dashboard <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/dashboard">∞</a></h3>
+						<h3>Dashboard <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/dashboard"> <i class="fa fa-external-link"></i></a></h3>
 						<ul>
-							<li>Arrêter le service en case de problème</li>
-							<li>Suivie de la consommation</li>
+							<li>Arrêter les optimisations en cas de problème</li>
+              <li>Désactiver la redirection DNS*</li>
+							<li>Suivi de la consommation</li>
 							<li>Vider le cache de Fasterize</li>
 						</ul>
-						<img src="assets/dashboard.png" />
+						<img src="assets/dashboard2.png" />
+					</section>
+          <section>
+						<h3>Configuration</h3>
+            <div style="text-align: left; ">
+            <p>Permet de configurer</p>
+            <ul>
+							<li>Règles</li>
+							<li>Domaines</li>
+							<li>Cache</li>
+							<li>Exclusions</li>
+							<li>Redirections</li>
+						</ul>
+            <p></p>
+            <p>En mode avancé</p>
+            <ul>
+							<li>Tracking de performance Fasterize &amp; widgets</li>
+							<li>A/B Test</li>
+							<li>Tests de non-régression visuelle</li>
+            </ul>
+          </div>
 					</section>
 					<section data-transition="linear">
-						<h3>page de règle d'optimisation <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/rules">∞</a></h3>
+						<h3>Configuration : règles <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/rules"> <i class="fa fa-external-link"></i></a></h3>
 						<ul>
-							<li>Activation des règles</li>
-							<li>Option des règles en cliquant sur la clé à droite</li>
-							<li>Exclusion d'url pour une règle</li>
+							<li>Activation/désactivation des règles</li>
+              <li>Options possibles : icône <i class="fa fa-wrench"></i></li>
+              <li>Exclusion d'URL pour une règle : icone <i class="fa fa-th-list"></i></li>
 						</ul>
 						<img src="assets/rules.png" />
 					</section>
 					<section data-transition="linear">
-						<h3>page de gestion des domaines <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/hosts_mapping">∞</a></h3>
+						<h3>Configuration : domaines <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/hosts_mapping"> <i class="fa fa-external-link"></i></a></h3>
 						<ul>
 							<li>Configuration de l'origine</li>
-							<li>Ajout de domaine secondaire</li>
+							<li>Ajout de domaine secondaire (objets statiques)</li>
 						</ul>
 						<img src="assets/domains.png" />
 					</section>
 					<section data-transition="linear">
-						<h3>page de gestion des exceptions <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/exclusions">∞</a></h3>
-						<p>Permet de ne pas optimiser une url en particulier</p>
-						<img src="assets/exclusion.png" />
-					</section>
-					<section>
-						<h3>page de gestion du cache <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/caching">∞</a></h3>
-						<p>Redéfinition des règles de mise en cache pour une url</p>
+						<h3>Configuration : cache<a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/caching"> <i class="fa fa-external-link"></i></a></h3>
+						<p>Redéfinition des règles de mise en cache pour une URL</p>
 						<img src="assets/caching.png" />
+					</section>
+					<section data-transition="linear">
+						<h3>Configuration : exceptions <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/exclusions"> <i class="fa fa-external-link"></i></a></h3>
+            <ul>
+
+            <li>Permet de ne pas optimiser une ou plusieurs URL.</li>
+            <li>Exemples :</li>
+            <ul>
+              <li>backofice</li>
+              <li>tracking</li>
+            </ul>
+						<img src="assets/exclusion.png" />
 					</section>
 				</section>
         <section>
           <section>
-            <h1>Setup</h1>
+            <h1>Configuration d’un site pas à pas</h1>
           </section>
+					<section data-transition="linear">
+						<h3>Ajouter une configuration</h3>
+						<ul>
+							<li></li>
+						</ul>
+					</section>
+ 					<section data-transition="linear">
+						<h3>Tester le site</h3>
+						<ul>
+							<li>Utiliser le mode preview : http://www.monsite.com.fasterized.com</li>
+							<li>Vérifier les vidéos WebPageTest</li>
+							<li>Vérifier les tests WebPageTest</li>
+						</ul>
+					</section>
+					<section data-transition="linear">
+            <h3>Utiliser les paramètres de debug</h3>
+            <p>Ajouter les paramètres suivants dans l'URL</p>
+						<ul class="code">
+              <li><code>?frz-all=false</code> pour tout désactiver sur une page</li>
+              <li><code>?frz-[rule]=false</code> pour désactiver une règle sur une page</li>
+              <li><code>?frz-[rule]-[option]=false</code> pour désactiver une option d'une règle sur une page</li>
+              <li><code>?frz-persist-[rule]=false</code> pour désactiver une règle sur une page et sur la session</li>
+              <li>Voir doc en ligne pour la liste des règles</li>
+						</ul>
+					</section>
+					<section data-transition="linear">
+            <h3>Activer / Désactiver des règles</h3>
+            <p>Les règles qui posent problème sont en général</p>
+						<ol class="code">
+              <li>DeferJS</li>
+              <li>Concaténation</li>
+              <li>Minification</li>
+              <li>Lazyloading</li>
+						</ol>
+            <p><p><p>Les règles peuvent désactivées pour des pages données ou globalement</p>
+					</section>
+					<section data-transition="linear">
+						<h3>Exclure une ou plusieurs URL qui pose problème au niveau global</h3>
+						<ul>
+							<li></li>
+						</ul>
+					</section>
+					<section data-transition="linear">
+						<h3>Ajouter un nom de domaine secondaire</h3>
+						<ul>
+							<li></li>
+						</ul>
+					</section>
+					<section data-transition="linear">
+						<h3>Si le site possède une partie sécurisée (HTTPS)</h3>
+						<ul>
+              <li>Contacter le support pour ajouter un certificat</li>
+              <li>Envoyer le certificat</li>
+						</ul>
+					</section>
+					<section data-transition="linear">
+						<h3>Branchement du site</h3>
+						<ul>
+							<li>Faire les dernières vérifications (tunnel d'achat, partie sécurisée)</li>
+							<li>Faire la bascule des DNS</li>
+						</ul>
+					</section>
         </section>
+        <section>
+          <section>
+            <h1>Gestion des cas avancés</h1>
+          </section>
+					<section data-transition="linear">
+						<h3>Le rapport ne montre pas d’amélioration de performances</h3>
+            <p>Cela peut venir de plusieurs facteurs</p>
+						<ul>
+							<li>Il y a une redirection vers le domaine d'origine du client (2 fois le même test)</li>
+							<li>Les images ne sont pas cachées / optimisées (cf. )</li>
+							<li>La fin de la vidéo est mal calculée</li>
+							<li>Le site est déjà optimisé ou très léger</li>
+						</ul>
+					</section>
+ 					<section data-transition="linear">
+						<h3>Images non optimisées</h3>
+						<ul>
+              <li>Pas de cache <i class="fa fa-arrow-right"></i> forcer le cache s'il n'est pas mis par défaut</li>
+							<li>Images sur un autre domaine <i class="fa fa-arrow-right"></i>  ajouter un domaine statique dans la configuration</li>
+						</ul>
+					</section>
+ 					<section data-transition="linear">
+            <h3>Redirection / Bare domain (domaine "nu")</h3>
+						<ul>
+							<li>Fasterize ne prend pas en compte les bares domains</li>
+							<li>Possibilité de lancer un test en contactant le support</li>
+						</ul>
+					</section>
+ 					<section data-transition="linear">
+						<h3>Les images sont trop dégradées</h3>
+						<ul>
+							<li></li>
+						</ul>
+					</section>
+					<section data-transition="linear">
+						<h3>Le slideshow met trop de temps à apparaître</h3>
+						<ul>
+							<li></li>
+						</ul>
+					</section>
+					<section data-transition="linear">
+						<h3>mettre en cache des pages identiques pour tous les utilisateurs</h3>
+						<ul>
+							<li></li>
+						</ul>
+					</section>
+				</section>
 			</div>
 			<div class="icon-bar">
 				<p>
@@ -264,7 +419,7 @@
 				controls: true,
 				progress: true,
 				history: true,
-				center: true,
+				center: false,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
