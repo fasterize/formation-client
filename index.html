@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -105,12 +105,15 @@
           margin: 0 2px;
           padding: 0px 5px;
           border: 1px solid #ddd;
-          background-color: #f8f8f8;
+          background-color: #AAA6A6;
           border-radius: 3px;
-        }
-        #reveal ul li {
-          padding: 10px 0 10px 0;
-        }
+      }
+      #reveal ul li {
+        padding: 10px 0 10px 0;
+      }
+      body {
+        background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #9CA0A2 100%)
+      }
 		</style>
 	</head>
 
@@ -121,14 +124,17 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-state="begin" class="present" >
+          <br><br><br><br>
 					<h1>Formation <br/>client</h1>
 				</section>
 				<section>
 					<section>
+            <br><br><br><br>
 						<h1>Présentation Générale</h1>
 					</section>
 					<section>
 						<h3>Fonctionnement général</h3>
+            <br><br>
 						<img src="assets/FasterizeplusCDN.png" class="plain"/>
 					</section>
 					<section>
@@ -157,10 +163,12 @@
 				</section>
 				<section>
 					<section>
-						<h1>les règles d'optimisation</h1>
+            <br><br><br><br>
+						<h1 style="font-size: 350%;">les règles d'optimisation</h1>
 					</section>
 					<section data-transition="linear">
 						<h3>Moins de requêtes</h3>
+            <br><br>
 						<ul>
 							<li><a href="http://browserdiet.com/fr/#combine-css" target="_blank">Concaténation des fichiers CSS</a></li>
 							<li><a href="http://browserdiet.com/fr/#combine-js" target="_blank">Concaténation des fichiers JS</a></li>
@@ -171,6 +179,7 @@
 					</section>
 					<section data-transition="linear">
 						<h3>Des requêtes et réponses moins lourdes</h3>
+            <br><br>
 						<ul class="rule">
 							<li><a href="http://browserdiet.com/fr/#minify-css" target="_blank">Minification des fichiers CSS</a></li>
 							<li><a href="http://browserdiet.com/fr/#minify-js" target="_blank">Minification des fichiers JS</a></li>
@@ -182,6 +191,7 @@
 					</section>
 					<section data-transition="linear">
 						<h3>Des objets chargés différemment</h3>
+            <br><br><br>
 						<ul>
 							<li><a href="http://browserdiet.com/fr/#css-on-top-js-on-bottom" target="_blank">Déplacement des CSS en haut de page</a></li>
 							<li><a href="http://browserdiet.com/fr/#3rd-party-async" target="_blank">Chargement différé des fichiers JavaScript</a></li>
@@ -191,6 +201,7 @@
 					</section>
           <section data-transition="linear">
             <h3>Et d'autres fonctionnalités...</h3>
+            <br><br><br><br>
             <ul>
               <li>Versionning automatique des URLs</li>
               <li>Redirection automatique des mobiles et tablettes sur des URLs spécifiques</li>
@@ -203,6 +214,7 @@
 					</section>
 					<section data-transition="none">
           <h3>Page de bienvenue<a title="Link" class="dashboard" target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/welcome"> <i class="fa fa-external-link"></i></a></h3>
+          <br><br>
               <ul >
                 <li>Test du site avec le mode preview</li>
                 <li>Instructions de branchement</li>
@@ -214,8 +226,9 @@
           <h3>Page de bienvenue<a title="Link" class="dashboard" target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/welcome"> <i class="fa fa-external-link"></i></a></h3>
             <img src="assets/welcome.png" >
 					</section>
-					<section data-transition="linear">
+					<section data-transition="none">
 						<h3>Dashboard <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/dashboard"> <i class="fa fa-external-link"></i></a></h3>
+            <br><br>
 						<ul>
 							<li>Arrêter les optimisations en cas de problème</li>
 							<li>Suivi de la consommation</li>
@@ -226,10 +239,10 @@
             <h3>Dashboard <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/dashboard"> <i class="fa fa-external-link"></i></a></h3>
             <img src="assets/dashboard.png" />
           </section>
-          <section>
+          <section data-transition="none">
 						<h3>Configuration</h3>
-            <div style="text-align: left; ">
-            <p>Permet de configurer</p>
+            <br><br>
+            <p>Permet de configurer :</p>
             <ul>
 							<li>Règles</li>
 							<li>Domaines</li>
@@ -237,26 +250,23 @@
 							<li>Exclusions</li>
 							<li>Redirections</li>
 						</ul>
-            <p></p>
-            <p>En mode avancé</p>
-            <ul>
-							<li>Tracking de performance Fasterize &amp; widgets</li>
-							<li>A/B Test</li>
-							<li>Tests de non-régression visuelle</li>
-            </ul>
-          </div>
 					</section>
-					<section data-transition="linear">
+					<section data-transition="none">
 						<h3>Configuration : règles <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/rules"> <i class="fa fa-external-link"></i></a></h3>
+            <br><br><br>
 						<ul>
 							<li>Activation/désactivation des règles</li>
               <li>Options possibles : icône <i class="fa fa-wrench"></i></li>
               <li>Exclusion d'URL pour une règle : icone <i class="fa fa-th-list"></i></li>
 						</ul>
-						<img src="assets/rules.png" />
 					</section>
-					<section data-transition="linear">
+          <section data-transition="none">
+            <h3>Configuration : règles <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/rules"> <i class="fa fa-external-link"></i></a></h3>
+            <img src="assets/rules.png" />
+          </section>
+					<section data-transition="none">
 						<h3>Configuration : domaines <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/hosts_mapping"> <i class="fa fa-external-link"></i></a></h3>
+            <br><br><br>
 						<ul>
 							<li>Configuration de l'origine</li>
 							<li>Ajout de domaine secondaire (objets statiques)</li>
@@ -266,13 +276,13 @@
             <h3>Configuration : domaines <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/hosts_mapping"> <i class="fa fa-external-link"></i></a></h3>
             <img src="assets/domains.png" />
           </section>
-					<section data-transition="linear">
+					<section data-transition="none">
 						<h3>Configuration : cache<a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/caching"> <i class="fa fa-external-link"></i></a></h3>
 						<p>Redéfinition des règles de mise en cache pour une URL</p>
 						<img src="assets/caching.png" />
 					</section>
-					<section data-transition="linear">
-						<h3>Configuration : exceptions <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/exclusions"> <i class="fa fa-external-link"></i></a></h3>
+					<section data-transition="none">
+						<h3>Configuration : exclusions <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/exclusions"> <i class="fa fa-external-link"></i></a></h3>
             <ul>
 
             <li>Permet de ne pas optimiser une ou plusieurs URL.</li>
@@ -288,22 +298,30 @@
           <section>
             <h1>Comment identifier et corriger un problème ?</h1>
           </section>
-					<section data-transition="linear">
-            <h3>Une page (ou le site complet) est cassée</h3>
-            <p>Utiliser les paramètres de debug en ajoutant les paramètres suivants dans l'URL :</p>
+          <section data-transition="none">
+            <h3>Une page ou une partie du site (ex: admin) est cassée</h3>
+            <br><br><br>
+            <ul>
+              <li>Tester le site d'origine sans Fasterize</li>
+              <li>Voir la procédure détaillée sur le site de support <a title="Link" class="dashboard"  target="_blank" data-href="http://support.fasterize.com/knowledgebase/articles/173792-inspect-origin-website"> <i class="fa fa-external-link"></i></a></li>
+            </ul>
+          </section>
+					<section data-transition="none">
+            <h3>Une page ou une partie du site (ex: admin) est cassée</h3>
+            <br>
+            <p>Utiliser les paramètres de debug dans l'URL :</p>
+            <br>
 						<ul class="code">
               <li><code>?frz-all=false</code> pour tout désactiver sur une page</li>
               <li><code>?frz-[rule]=false</code> pour désactiver une règle sur une page</li>
               <li><code>?frz-[rule]-[option]=false</code> pour désactiver une option d'une règle sur une page</li>
               <li><code>?frz-persist-[rule]=false</code> pour désactiver une règle sur une page et sur la session</li>
-              <li>Voir doc en ligne pour la liste des règles</li>
 						</ul>
 					</section>
 					<section data-transition="none">
-            <h3>Une page (ou le site complet) est cassée</h3>
-            <p>Une fois la règle posant problème identifiée, modifier la configuration pour corriger le problème :</p>
+            <h3>Une page ou une partie du site (ex: admin) est cassée</h3>
             <ul>
-              <li>Activer / Désactiver des règles
+              <li><a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/rules">Activer / Désactiver des règles</a>
                 <p>Les règles qui posent problème sont en général</p>
                 <ol style="margin-left:80px">
                   <li>DeferJS</li>
@@ -313,20 +331,43 @@
                 </ol>
                 <p><p><p>Les règles peuvent désactivées pour des pages données ou globalement</p>
               </li>
-              <li>Exclure une ou plusieurs URL qui pose problème au niveau global</li>
-              <li>Ajouter un nom de domaine secondaire</li>
+              <li><a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/exclusions">Exclure une (ou plusieurs) URL(s)</a> qui pose(nt) problème au niveau global</li>
             </ul>
 					</section>
-          <section data-transition="linear">
-            <h3>Une page d'erreur s'affiche : 'Couldn't find origin server...'</h3>
+          <section data-transition="none">
+            <h3>Impossible de se connecter à la console d'admin Prestashop</h3>
+            <br><br><br>
             <ul>
-              <li>L'alias n'est pas configuré dans Fasterize</li>
-              <li>Il faut le rajouter dans la <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/hosts_mapping">configuration des domaines</a></li>
+              <li>Vérifier que Prestashop n'est pas configuré pour vérifier l'IP dans le cookie</li>
+              <li>Plus de détails ici <a title="Link" class="dashboard"  target="_blank" data-href="http://support.fasterize.com/knowledgebase/articles/304816-my-prestashop-admin-reprompts-me-constantly"> <i class="fa fa-external-link"></i></a></li>
             </ul>
           </section>
-          <section data-transition="linear">
+          <section data-transition="none">
+            <h3>Ma solution d'analyse comportemental ou detection de fraude n'arrive plus à récupérer l'IP des clients</h3>
+            <br>
+            <p>Toutes les requêtes arrivant sur vos serveurs auront comment IP client celles de Fasterize.
+            Fasterize recopie l'IP des clients dans le header HTTP X-Forwarded-For</p>
+            <br>
+            <ul>
+              <li>Configurer votre outil pour exploiter le X-Forwarded-For</li>
+              <li>Plus de détails ici <a title="Link" class="dashboard"  target="_blank" data-href="http://support.fasterize.com/knowledgebase/articles/173796-how-do-i-know-the-client-ip-address-for-my-users-"> <i class="fa fa-external-link"></i></a>
+            </ul>
+          </section>
+          <section data-transition="none">
+            <h3>Une page d'erreur s'affiche : 'Couldn't find origin server...'</h3>
+            <br>
+            <p>Tous les alias pointant sur le site doivent être configurés dans Fasterize, dans le cas échéant nous ne pouvons résoudre l'origine. Cela peut également arriver si vous venez de procéder à une migration de vos serveurs et que l'IP de votre origine a changé</p>
+            <br>
+            <ul>
+              <li>Rajouter tous les alias dans la <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/hosts_mapping">configuration des domaines</a></li>
+              <li>Vérifier l'origine dans la <a title="Link" class="dashboard"  target="_blank" data-href="http://www.fasterize.com/fr/website_configs/id/hosts_mapping">configuration des domaines</a></li>
+            </ul>
+          </section>
+          <section data-transition="none">
             <h3>Les images sont trop dégradées</h3>
+            <br>
             <p>Certaines images, notamment certains dégradés, peuvent subir une modification trop visible</p>
+            <br>
             <ul>
               <li>Exclure les images concernées en les mettant en blacklist de la compression d'image</li>
               <li>Exclure les images concernées de façon globale</li>
@@ -334,18 +375,18 @@
               <li>Désactiver la compression des images</li>
             </ul>
           </section>
-					<section data-transition="linear">
+					<section data-transition="none">
 						<h3>Et si vous ne vous en sortez pas...</h3>
-						<ul>
-              <li>contacter le support par mail à support@fasterize.com</li>
-						</ul>
+            <br><br><br><br><br>
+						<p>Contacter le support par mail à support@fasterize.com</p>
 					</section>
-          <section data-transition="linear">
+          <section data-transition="none">
             <h3>Contacter le support également pour :</h3>
+            <br><br><br>
             <ul>
-              <li>prévenir d'une refonte du site</li>
-              <li>prévenir d'une expiration du certificat SSL</li>
-              <li>d'une migration de serveur (changement d'IP ou nom de domaine origine)</li>
+              <li>Prévenir d'une refonte du site</li>
+              <li>Prévenir d'une expiration du certificat SSL</li>
+              <li>Prévenir d'une migration de serveur (changement d'IP ou nom de domaine origine)</li>
             </ul>
           </section>
         </section>
